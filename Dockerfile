@@ -4,7 +4,7 @@ LABEL maintainer="ysenih@erpya.com" \
 	description="ADempiere gRPC Dictionary Server"
 
 ENV URL_REPO="https://github.com/erpcya/adempiere-gRPC-Server" \
-	BASE_VERSION="rt-13.3" \
+	BASE_VERSION="rt-14.5" \
 	BINARY_NAME="adempiere-gRPC-Server.zip"
 
 WORKDIR /opt/Apps/
