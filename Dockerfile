@@ -4,14 +4,14 @@ LABEL maintainer="ysenih@erpya.com; EdwinBetanc0urt@outlook.com" \
 	description="ADempiere gRPC Dictionary Server"
 
 ENV URL_REPO="https://github.com/erpcya/adempiere-gRPC-Server" \
-	BASE_VERSION="rt-15.4" \
+	BASE_VERSION="rt-15.6" \
 	BINARY_NAME="adempiere-gRPC-Server.zip"
 
-WORKDIR /opt/Apps/
-
-RUN echo "Install needed packages..." && \
+RUN mkdir -p /opt/Apps && \
+	cd /opt/Apps && \
+	echo "Install needed packages..." && \
 	apk --no-cache add curl && \
-	echo "Get gRPC Server Binary Release:${BASE_VERSION}..." && \
+	echo "Get gRPC Server Binary Release: ${BASE_VERSION}..." && \
 	curl --output "$BINARY_NAME" -L "$URL_REPO/releases/download/$BASE_VERSION/$BINARY_NAME" && \
 	echo "Uncompress release file..." && \
 	unzip -o $BINARY_NAME && \
