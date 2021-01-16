@@ -1,5 +1,8 @@
 ADempiere Dictionary gRPC Docker Server
 =====================
+
+#### @DEPRECATED Replace with https://github.com/adempiere/adempiere-grpc-all-in-one-docker
+
 This server can be used for get information from ADempiere dictionary and is related to project: https://github.com/erpcya/adempiere-gRPC-Server
 
 [Docker](https://www.docker.io/) file for trusted builds of [ADempiere gRPC Deploy](http://erpya.com/) on https://hub.docker.com/r/erpya/adempiere-grpc-dictionary.
